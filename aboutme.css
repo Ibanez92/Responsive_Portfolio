@@ -2,8 +2,25 @@ img {
     float: left;  
     margin: 5px; 
 } 
-p { 
+.text1 { 
     text-align: justify; 
     font-size: 18px; 
     font-weight: 560;
+}
+
+@media (max-width: 768px) { 
+    body {
+        padding: 20px;
+        text-align: center;
+        background-position: center;
+        margin: 20px;
+    }
+
+.left {
+    float: left;
+    padding: 5px
+}
+
+h5 {
+    text-align: justify; 
 }

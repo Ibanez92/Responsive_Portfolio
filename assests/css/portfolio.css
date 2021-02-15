@@ -1,0 +1,55 @@
+body {
+    background-image: url(/images/oriental-tiles.png);
+
+}
+
+hr {
+    height: 6px;
+    background-color: #012641;
+}
+
+
+footer {
+    background-color: rgb(13, 24, 61);
+    text-align: center;
+    margin-top: bottom;
+    position:fixed;bottom:0;
+    width:100%;
+    display:block;
+    height: 28px;
+    color: white;
+    
+}
+
+
+
+.image-text {
+   text-align: center;
+   background-color: rgb(13, 24, 61);
+   color: white;
+   font-family: 'Times New Roman', Times, serif;
+   font-size: 21px;
+   padding: 5px;
+   width: 330px;
+   
+   position: absolute;
+   bottom: 20px;
+}
+
+
+@media (max-width: 768px) { 
+    body {
+        padding: 20px;
+        text-align: center;
+        background-position: center;
+        margin: 20px;
+    }
+
+.left {
+    float: left;
+    padding: 5px
+}
+
+h5 {
+    text-align: justify; 
+}
