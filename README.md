@@ -6,11 +6,11 @@ Table of Contents
 2.Containing Information
 3.Credit
 
-1.General Info
+# General Info
 --------------------
 This is a portfolio summarizing and highlighting Javier Ibanez's  career/life 
 
-2.Containing Information
+# Containing Information
 --------------------
 Contains 3 HTMLS and a CSS link
 
