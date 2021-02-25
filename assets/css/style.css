@@ -273,8 +273,8 @@ p{
   padding: 100px 0;
 }
 #services .service-top{
-  width: 500px;
-  max-margin: 0 auto;
+  max-width: 500px;
+  margin: 0 auto;
 }
 #services .service-top {
 	max-width: 500px;
@@ -373,7 +373,7 @@ p{
 }
 #projects .project-info h2{
   font-size: 1.8rem;
-  font-weight: 500;
+  font-weight: 501;
   margin-top: 10px;
 }
 #projects .project-info p{
@@ -393,13 +393,16 @@ p{
   height: 100%;
   width: 100%;
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-  opacity: .7;
+  opacity: .1;
 }
 #projects .project-img img{
   transition: .3s ease transform;
 }
 #projects .project-item:hover .project-img img{
   transform: scale(1.1);
+}
+#projects .project-info a{
+  color: rgb(87, 87, 241);
 }
 /* End Projects section */
 
@@ -649,13 +652,13 @@ p{
     width: 100%;
     display: flex;
     flex-direction: row;
-    margin: 0;
     justify-content: space-evenly;
+    margin: 0;
   }
    #contact .contact-item{
      width: 30%;
-     flex-direction: row; 
      margin: 0;
+     flex-direction: row; 
   }
   #contact .contact-item .icon{
     height: 100px;
@@ -695,7 +698,7 @@ p{
     font-size: 1.8rem;
   }
 
-  #header .nav-list a:after{
+  #header .nav-list ul a:after{
     display: none;
   }
   /* End Header */
