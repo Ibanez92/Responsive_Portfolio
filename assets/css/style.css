@@ -49,13 +49,14 @@ p{
   padding: 10px 30px;
   color: white;
   background-color: transparent;
-  border: 2px solid crimson;
+  border: 7px solid crimson;
   font-size: 2rem;
   text-transform: uppercase;
-  letter-spacing: .1rem;
+  letter-spacing: .4rem;
   margin-top: 30px;
   transition: .3s ease;
   transition-property: background-color, color;
+  font-weight: 505;
 }
 .cta:hover {
   color: white;
@@ -200,7 +201,7 @@ p{
 
 /* Hero Section */
 #hero {
-  background-image: url(/assets/images/meetyoucover.png);
+  background-image: url(https://images.unsplash.com/photo-1605379399642-870262d3d051?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1381&q=80);
   background-size: cover;
   background-position: top center;
   position: relative;
@@ -214,7 +215,7 @@ p{
   height: 100%;
   width: 100%;
   background-color: black;
-  opacity: .7;
+  opacity: .9;
   z-index: -1;
 }
 #hero .hero{
@@ -565,7 +566,7 @@ p{
 }
 @keyframes text_reveal_name{
   100%{
-    color: crimson;
+    color: rgb(252, 59, 59);
     font-weight: 500px;
   }
 }
