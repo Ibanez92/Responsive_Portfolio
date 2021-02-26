@@ -588,7 +588,7 @@ p{
   /* Service Section */
   #services .service-bottom .service-item{
     flex-basis: 45%;
-    margin: 1.5%;
+    margin: 2.5%;
   }  
 
   /* End Service Section */
@@ -609,10 +609,11 @@ p{
   }
   #projects .all-projects .project-info{
     height: 100%;
-  }
+    }
   #projects .all-projects .project-img{
     height: 100%;
   }
+  
 
   /* End Project */
   /* About */
