@@ -1,7 +1,8 @@
 # Responsive_Portfolio
 
-This is a portfolio created using some animated css, Vanilla Javascript, and Es6, summarizing and highlighting Javier Ibanez's career. 
+This is a responsive portfolio created using some animated CSS, Vanilla Javascript, and Es6, summarizing and highlighting Javier Ibanez's career. 
 
-![Screenshot (19)](https://user-images.githubusercontent.com/69645144/109263659-a7156700-77d1-11eb-9ef1-698c1cdc86b4.png)
+![Screenshot (25)](https://user-images.githubusercontent.com/69645144/109377804-9fba9000-789b-11eb-8a13-085fef41dc2f.png)
+
 
 
