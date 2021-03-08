@@ -6,6 +6,10 @@ This is a responsive portfolio created using some animated CSS, Vanilla Javascri
 
 ![Screenshot (25)](https://user-images.githubusercontent.com/69645144/109377804-9fba9000-789b-11eb-8a13-085fef41dc2f.png)
 
-# Demo video of app
+# Demo video of Desktop version
 
-![Animated GIF-downsized_large](https://user-images.githubusercontent.com/69645144/110196012-8ff8f980-7e0f-11eb-8d4e-b077b9dd4850.gif)
+![Animated GIF-downsized_large (port)](https://user-images.githubusercontent.com/69645144/110292349-0d14a200-7fbb-11eb-8639-8a431d3221b5.gif)
+
+# Demo video of Mobile version
+
+![Animated GIF-downsized_large (portmobile)](https://user-images.githubusercontent.com/69645144/110297183-31737d00-7fc1-11eb-9cf2-88c35e8bc341.gif)
