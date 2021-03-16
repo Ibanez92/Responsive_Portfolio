@@ -498,6 +498,16 @@ p{
   font-weight: 505;
 }
 /* End of Contact Section */
+
+/* Form Start */
+.body-form{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* Form End */
+
 /* Footer */
 #footer{
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
@@ -572,6 +582,11 @@ p{
 }
 /* Media Query for Tablet */
 @media only screen and (min-width: 768px){
+  #form {
+    text-align: center;
+   
+  }
+
   .cta{
     font-size: 2.5rem;
     padding: 20px 60px;
@@ -645,7 +660,7 @@ p{
   /* Contact */
   #contact .contact{
     flex-direction: column;
-    padding: 100px 0;
+    padding: 0;
     align-items: center;
     justify-content: center;
     min-width: 20vh;
@@ -707,6 +722,11 @@ p{
   #services .service-bottom .service-item{
     flex-basis: 22%;
     margin: 1.5%;
+  }
+  .body-form{
+    text-align: center;
+    margin-top: 150px;
+    
   }
 }
 /* End Media Query for Desktop */
