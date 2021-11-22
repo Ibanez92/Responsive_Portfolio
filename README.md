@@ -1,6 +1,6 @@
 # Responsive_Portfolio
 
-This is a responsive portfolio created using some animated CSS, Vanilla Javascript, and Es6, summarizing and highlighting Javier Ibanez's journey as a software engineer. 
+This is a responsive portfolio created using some animated CSS, Javascript, and Es6, summarizing and highlighting Javier Ibanez's journey as a software engineer. 
 
 # Screenshot of app
 
