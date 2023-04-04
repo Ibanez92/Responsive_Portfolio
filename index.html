@@ -24,6 +24,7 @@
                     // these IDs from the previous steps
                     emailjs.sendForm('service_6c5gizv', 'template_mq0xm2c', this).then(function (res) {
                         console.log('SUCCESS!', res.status, res.text);
+                        alert('Thank you! Your email was successfully sent.')
                     }, function (error) {
                         console.log('FAILED...', error);
                     });
