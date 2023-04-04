@@ -1,269 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>My Portfolio</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <title>My Portfolio</title>
 
-    
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function() {
-        emailjs.init("user_XtVxM576M6HpDPwJw5wkw");
-        })();
-    </script>
 
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                
-                
-                // these IDs from the previous steps
-                emailjs.sendForm('service_6c5gizv', 'template_mq0xm2c', this)
-                    .then(function(res) {
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function () {
+                emailjs.init("user_XtVxM576M6HpDPwJw5wkw");
+            })();
+        </script>
+
+        <script type="text/javascript">
+            window.onload = function () {
+                document.getElementById('contact-form').addEventListener('submit', function (event) {
+                    event.preventDefault();
+
+
+                    // these IDs from the previous steps
+                    emailjs.sendForm('service_6c5gizv', 'template_mq0xm2c', this).then(function (res) {
                         console.log('SUCCESS!', res.status, res.text);
-                    }, function(error) {
+                    }, function (error) {
                         console.log('FAILED...', error);
                     });
-            });
-        }
-    </script>
-    
-   
-
-    
-  
+                });
+            }
+        </script>
 
 
-
-
-    
-
-</head>
-<body>
-    <!-- Header -->
-    <section id="header">
-        <div class="header container">
-            <div class="nav-bar">
-                <div class="brand">
-                    <a href="#hero"><h1><span>J</span>avier <span>I</span>banez</h1></a>
-                </div>
-                <div class="nav-list">
-                    <div class="hamburger"><div class="bar"></div></div>
-                    <ul>
-                        <li><a href="#hero" data-after="Home">Home</a></li>
-                        <li><a href="#services" data-after="Service">Services</a></li>
-                        <li><a href="#projects" data-after="Projects">Projects</a></li>
-                        <li><a href="#about" data-after="About">About</a></li>
-                        <li><a href="#contact" data-after="Contact">Contact</a></li>
-
-
-                    </ul>
+    </head>
+    <body>
+        <!-- Header -->
+        <section id="header">
+            <div class="header container">
+                <div class="nav-bar">
+                    <div class="brand">
+                        <a href="#hero">
+                            <h1>
+                                <span>J</span>avier
+                                <span>I</span>banez</h1>
+                        </a>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End of Header -->
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="hero container">
-            <div>
-                <h1>Hello,<span></span></h1>
-                <h1>My name is <span></span></h1>
-                <h1>Javier Ibanez<span></span></h1>
-
-                <a href="#projects" type="button" class="cta">Portfolio</a>
-            </div>
-        </div>
-    </section>
-    <!-- End Hero Section -->
-
-    <!-- Service Serction -->
-    <!-- <section id="services">
-        <div class="services container">
-            <div class="service-top">
-                <h1 class="section-title">Serv<span>i</span>ces</h1>
-                <p>This the example of what im going to write.example of this or that and anything above, these are just words for npw to take iup space. its nothing serious so gfet a grip.</p>
-            </div>
-            <div class="service-bottom">
-              <div class="service-item">
-                <div class="icon"><img src="https://img.icons8.com/clouds/100/000000/gears.png"/></div>
-                <h2>Web Design</h2>
-                <p>This is some example tect to put into our first card box describving services. eg fnasig nviasrgn viasnv asirnv ginwrad jkghnsga agsi aig a gaio a afg aw</p>
-              </div>
-              <div class="service-item">
-                <div class="icon"><img src="https://img.icons8.com/clouds/100/000000/gears.png"/></div>
-                <h2>Web Design</h2>
-                <p>This is some example tect to put into our first card box describving services. eg fnasig nviasrgn viasnv asirnv ginwrad jkghnsga agsi aig a gaio a afg aw</p>
-              </div>
-              <div class="service-item">
-                <div class="icon"><img src="https://img.icons8.com/clouds/100/000000/gears.png"/></div>
-                <h2>Web Design</h2>
-                <p>This is some example tect to put into our first card box describving services. eg fnasig nviasrgn viasnv asirnv ginwrad jkghnsga agsi aig a gaio a afg aw</p>
-              </div>
-              <div class="service-item">
-                <div class="icon"><img src="https://img.icons8.com/clouds/100/000000/gears.png"/></div>
-                <h2>Web Design</h2>
-                <p>This is some example tect to put into our first card box describving services. eg fnasig nviasrgn viasnv asirnv ginwrad jkghnsga agsi aig a gaio a afg aw</p>
-              </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- End Hero Section -->
-
-    <!--- Project Section --->
-    <section id="projects">
-        <div class="projects container">
-            <div class="projects-header">
-                <h1 class="section-title">Recent <span>Projects</span></h1>
-            </div>
-            <div class="all-projects">
-                
-                <div class="project-item">
-                    <div class="project-info">
-                        <h1>TicTacToe App</h1>
-                        <h2><a href="https://tictactoe-e327a.web.app/">https://tictactoe-e327a.web.app/</a></h2>
-                        <p>My TicTacToe application uses the JavaScript Angular framework to create a working tictactoe game. I used the firebase platform to run and depoly this PWA(Progressive Web Application). You can install this application to your desktop with the install button in your browser search bar.
-                        </p>
-                    </div>
-                    <div class="project-img">
-                        <img src="./assets/images/Screenshot (88).png" alt="tic tac toe image">
-                    </div>
-                </div>
-
-              <div class="project-item">
-                <div class="project-info">
-                    <h1>Recipe App</h1>
-                    <h2><a href="https://ibanez92.github.io/Recipe-App/">https://ibanez92.github.io/Recipe-App/</a></h2>
-                    <p>Recipe app is a static mobile/desktop responsive web application that uses Javascript to dynamically interact with the Edamame Recipe Search API.The user inputs any type of food and API brings up the name of the Recipe, the Calories, the Diet Label, and the Health Label. Clicking on the view recipe button will take the user to the source website to find the ingredients of the recipe chosen.</p>
-                </div>
-                <div class="project-img">
-                   <img src="assets\images\recipeapp.png" alt="recipeimg">
-                </div>
-            </div>
-        
-           <div class="project-item">
-                <div class="project-info">
-                    <h1>Movie-App</h1>
-                    <h2><a href="https://ibanez92.github.io/Movie-App/">https://ibanez92.github.io/Movie-App/</a></h2>
-                    <p>Movie App is a static desktop application that uses vanilla Javascript/ES6 and TMDB (The Movie Database) API. When the user inputs the movie title into the search bar, the user's input title will show movie images and movie trailers from youtube when the movie image is clicked. Then in order from top to bottom, it shows a row of the upcoming movies, the popular movies, and the top-rated movies. All 4 are called from the TMDB (The Movie Database) API database.
-                    </p>
-                </div>
-                <div class="project-img">
-                    <img src="./assets/images/movieappdemo.png" alt="img">
-                </div>
-            </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- End Projects Section -->
-
-    <!-- About Section -->
-    <section id="about">
-        <div class="about container">
-            <div class="col-left">
-                <div class="about-img">
-                    <img src="./assets/images/me.png" alt="aboutmeimg">
-                </div>
-            </div>
-            <div class="col-right">
-                <h1 class="section-title">About <span>Me</span></h1>
-                <h2>Full Stack Developer</h2>
-                <p>Software Engineer with experience in front and back-end development, with high focus in JavaScript and its frameworks like ReactJS. Highly analytical with experience collaborating in diverse teams and independently with demanding timelines to execute projects and improve UI/UX. </p>
-                <a href="https://docs.google.com/document/d/1RaUSm5CpaSfjgpKq_06i9gpgktJYsgDA8iWmmqB-hkA/edit?usp=sharing" class="cta">Check Out My Resume</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- End About Section -->
-
-    <!-- Contact section -->
-    <section id="contact">
-        <div class="contact container">
-            <div><h1 class="section-title">Contact <span>Info</span></h1></div>
-            <div class="contact-items">
-                <div class="contact-item">
-                    <div class="icon"><img src="https://img.icons8.com/clouds/100/000000/apple-phone.png"/></div>
-                    <div class="contact-info">
-                        <h1>Phone</h1>
-                        <h2>(863) 282 4165</h2>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="icon"><img src="https://img.icons8.com/clouds/100/000000/cloud-mail.png"/></div>
-                    <div class="contact-info">
-                        <h1>Email</h1>
-                        <h2>JavierIbanez92@outlook.com</h2>
-                    </div>
-                </div>
-                <div class="contact-item">
-                    <div class="icon"><img src="https://img.icons8.com/clouds/100/000000/address.png"/></div>
-                    <div class="contact-info">
-                        <h1>Address</h1>
-                        <h2>Davenport, FL</h2>
-                    </div>
-                </div>
-            </div>
-            
-            <!--  Form Start -->
-            
-                <div id="form1" class="body-form">
-                        <div class="contact-title">
-                            <h1>Send me a direct message to my email</h1>
-                            
+                    <div class="nav-list">
+                        <div class="hamburger">
+                            <div class="bar"></div>
                         </div>
-                
-                        
-                            <form id="contact-form" class="contact-form">
-                                <input type="text" name="from_name" class="form-control" placeholder="Your Name">
-                                <br>
-                                <input type="email" name="user_email" class="form-control" placeholder="Your Email"><br>
+                        <ul>
+                            <li><a href="#hero" data-after="Home">Home</a></li>
+                            <li><a href="#services" data-after="Service">Services</a></li>
+                            <li><a href="#projects" data-after="Projects">Projects</a></li>
+                            <li><a href="#about" data-after="About">About</a></li>
+                            <li><a href="#contact" data-after="Contact">Contact</a></li>
 
-                                <textarea type="text" name="message" class="form-control" cols="30" rows="4" placeholder="Message"></textarea><br>
-                
-                                <button type="submit" value="Send" class="form-control submit">Send Email</button>
-                                
-                            </form>
-                        
+
+                        </ul>
                     </div>
                 </div>
-            
-            <!-- Form End -->
-
+            </div>
         </div>
-    </section>
+    </body>
+</html></section><!-- End of Header --><!-- Hero Section --><section id="hero">
+<div class="hero container">
+    <div>
+        <h1>Hello,<span></span>
+        </h1>
+        <h1>My name is
+            <span></span>
+        </h1>
+        <h1>Javier Ibanez<span></span>
+        </h1>
 
-    <!-- End of Contact Section -->
-
- 
-    <!-- Footer -->
-    <section id="footer">
-        <div class="footer container">
-            <div class="brand"><h1><span>J</span>avier <span>I</span>banez</h1></div>
-            <h2>Lets connect!</h2>
-            <div class="social-icon">
-                <div class="social-item">
-                    <a href="https://www.linkedin.com/in/javierlibanez92/"><img src="https://img.icons8.com/fluent/48/000000/linkedin-circled.png"/></a>
+        <a href="#projects" type="button" class="cta">Portfolio</a>
+    </div>
+</div></section><!-- End Hero Section --><!-- Service Serction --><!-- <section id="services">
+            <div class="services container">
+                <div class="service-top">
+                    <h1 class="section-title">Serv<span>i</span>ces</h1>
+                    <p>This the example of what im going to write.example of this or that and anything above, these are just words for npw to take iup space. its nothing serious so gfet a grip.</p>
                 </div>
-                <div class="social-item">
-                    <a href="https://github.com/Ibanez92"><img src="https://img.icons8.com/fluent/48/000000/github.png"/></a>
+                <div class="service-bottom">
+                  <div class="service-item">
+                    <div class="icon"><img src="https://img.icons8.com/clouds/100/000000/gears.png"/></div>
+                    <h2>Web Design</h2>
+                    <p>This is some example tect to put into our first card box describving services. eg fnasig nviasrgn viasnv asirnv ginwrad jkghnsga agsi aig a gaio a afg aw</p>
+                  </div>
+                  <div class="service-item">
+                    <div class="icon"><img src="https://img.icons8.com/clouds/100/000000/gears.png"/></div>
+                    <h2>Web Design</h2>
+                    <p>This is some example tect to put into our first card box describving services. eg fnasig nviasrgn viasnv asirnv ginwrad jkghnsga agsi aig a gaio a afg aw</p>
+                  </div>
+                  <div class="service-item">
+                    <div class="icon"><img src="https://img.icons8.com/clouds/100/000000/gears.png"/></div>
+                    <h2>Web Design</h2>
+                    <p>This is some example tect to put into our first card box describving services. eg fnasig nviasrgn viasnv asirnv ginwrad jkghnsga agsi aig a gaio a afg aw</p>
+                  </div>
+                  <div class="service-item">
+                    <div class="icon"><img src="https://img.icons8.com/clouds/100/000000/gears.png"/></div>
+                    <h2>Web Design</h2>
+                    <p>This is some example tect to put into our first card box describving services. eg fnasig nviasrgn viasnv asirnv ginwrad jkghnsga agsi aig a gaio a afg aw</p>
+                  </div>
                 </div>
             </div>
-            <p>Copyright © 2021 Javier. All rights reserved</p>
+        </section> --><!-- End Hero Section --><!--- Project Section --->
+<section id="projects"> <div class="projects container">
+    <div class="projects-header">
+        <h1 class="section-title">Recent
+            <span>Projects</span>
+        </h1>
+    </div>
+    <div class="all-projects">
+
+        <div class="project-item">
+            <div class="project-info">
+                <h1>TicTacToe App</h1>
+                <h3>
+                    <a href="https://tictactoe-e327a.web.app/">https://tictactoe-e327a.web.app/</a>
+                </h3>
+                <p>My TicTacToe application uses the JavaScript Angular framework to create a working tictactoe game. I used the firebase platform to run and depoly this PWA(Progressive Web Application). You can install this application to your desktop with the install button in your browser search bar.
+                </p>
+            </div>
+            <div class="project-img">
+                <img src="./assets/images/Screenshot (88).png" alt="tic tac toe image">
+            </div>
         </div>
-    </section>
 
-    <!-- End Footer -->
+        <div class="project-item">
+            <div class="project-info">
+                <h1>Recipe App</h1>
+                <h3>
+                    <a href="https://ibanez92.github.io/Recipe-App/">https://ibanez92.github.io/Recipe-App/</a>
+                </h3>
+                <p>Recipe app is a static mobile/desktop responsive web application that uses Javascript to dynamically interact with the Edamame Recipe Search API.The user inputs any type of food and API brings up the name of the Recipe, the Calories, the Diet Label, and the Health Label. Clicking on the view recipe button will take the user to the source website to find the ingredients of the recipe chosen.</p>
+            </div>
+            <div class="project-img">
+                <img src="assets\images\recipeapp.png" alt="tic tac toe image">
+            </div>
+        </div>
 
-    
-<script src="main.js"></script>
-    
-</body>
-</html>
+        <div class="project-item">
+            <div class="project-info">
+                <h1>Movie-App</h1>
+                <h3>
+                    <a href="https://ibanez92.github.io/Movie-App/">https://ibanez92.github.io/Movie-App/</a>
+                </h3>
+                <p>Movie App is a static desktop application that uses vanilla Javascript/ES6 and TMDB (The Movie Database) API. When the user inputs the movie title into the search bar, the user's input title will show movie images and movie trailers from youtube when the movie image is clicked. Then in order from top to bottom, it shows a row of the upcoming movies, the popular movies, and the top-rated movies. All 4 are called from the TMDB (The Movie Database) API database.
+                </p>
+            </div>
+            <div class="project-img">
+                <img src="./assets/images/movieappdemo.png" alt="img">
+            </div>
+        </div>
+
+    </div>
+</div></section><!-- End Projects Section --><!-- About Section --><section id="about">
+<div class="about container">
+    <div class="col-left">
+        <div class="about-img">
+            <img src="./assets/images/me.png" alt="aboutmeimg">
+        </div>
+    </div>
+    <div class="col-right">
+        <h1 class="section-title">About
+            <span>Me</span>
+        </h1>
+        <h2>Full Stack Developer</h2>
+        <p>Software Engineer with experience in front and back-end development, with high focus in JavaScript and its frameworks like ReactJS. Highly analytical with experience collaborating in diverse teams and independently with demanding timelines to execute projects and improve UI/UX.
+        </p>
+        <a href="https://docs.google.com/document/d/1RaUSm5CpaSfjgpKq_06i9gpgktJYsgDA8iWmmqB-hkA/edit?usp=sharing" class="cta">Check Out My Resume</a>
+    </div>
+</div></section><!-- End About Section --><!-- Contact section --><section id="contact">
+<div class="contact container">
+    <div>
+        <h1 class="section-title">Contact
+            <span>Info</span>
+        </h1>
+    </div>
+    <div class="contact-items">
+        <div class="contact-item">
+            <div class="icon"><img src="https://img.icons8.com/clouds/100/000000/apple-phone.png"/></div>
+            <div class="contact-info">
+                <h1>Phone</h1>
+                <h2>(863) 282 4165</h2>
+            </div>
+        </div>
+        <div class="contact-item">
+            <div class="icon"><img src="https://img.icons8.com/clouds/100/000000/cloud-mail.png"/></div>
+            <div class="contact-info">
+                <h1>Email</h1>
+                <h2>JavierIbanez92@outlook.com</h2>
+            </div>
+        </div>
+        <div class="contact-item">
+            <div class="icon"><img src="https://img.icons8.com/clouds/100/000000/address.png"/></div>
+            <div class="contact-info">
+                <h1>Address</h1>
+                <h2>Davenport, FL</h2>
+            </div>
+        </div>
+    </div>
+
+    <!--  Form Start -->
+
+    <div id="form1" class="body-form">
+        <div class="contact-title">
+            <h1>Send me a direct message to my email</h1>
+
+        </div>
+
+
+        <form id="contact-form" class="contact-form">
+            <input type="text" name="from_name" class="form-control" placeholder="Your Name">
+            <br>
+            <input type="email" name="user_email" class="form-control" placeholder="Your Email"><br>
+
+            <textarea type="text" name="message" class="form-control" cols="30" rows="4" placeholder="Message"></textarea><br>
+
+            <button type="submit" value="Send" class="form-control submit">Send Email</button>
+
+        </form>
+
+    </div>
+</div>
+
+<!-- Form End --></div></section><!-- End of Contact Section --><!-- Footer --><section id="footer"><div class="footer container">
+<div class="brand">
+    <h1>
+        <span>J</span>avier
+        <span>I</span>banez</h1>
+</div>
+<h2>Lets connect!</h2>
+<div class="social-icon">
+    <div class="social-item">
+        <a href="https://www.linkedin.com/in/javierlibanez92/"><img src="https://img.icons8.com/fluent/48/000000/linkedin-circled.png"/></a>
+    </div>
+    <div class="social-item">
+        <a href="https://github.com/Ibanez92"><img src="https://img.icons8.com/fluent/48/000000/github.png"/></a>
+    </div>
+</div>
+<p>Copyright © 2021 Javier. All rights reserved</p></div></section><!-- End Footer --><script src="main.js"></script></body></html>
